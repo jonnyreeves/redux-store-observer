@@ -1,12 +1,13 @@
 # redux-store-observer
 > Respond to Redux Store Stage Changes
 
-Inspired by [@gaearon](https://github.com/gaearon)'s comment on [rackt/redux#303](https://github.com/rackt/redux/issues/303), storeObserver provides a thin wrapper around Redux's `store#subscribe()` to allow you to response to state changes.
-
+Inspired by [@gaearon](https://github.com/gaearon)'s comment on [rackt/redux#303](https://github.com/rackt/redux/issues/303): 
 > If you don't want to use RX and prefer a callback... again easy to do.
 
+`redux-store-observer` provides a thin wrapper around Redux's `store#subscribe()` to allow you to respond to state changes.
+
 ## Usage
-After you've created your store, export the result value from `newStoreObserver(store)`.
+After you've created your store, create a new storeObserver instance by invoking `createStoreObserver(store)`.
 
 #### `index.js`
 ```js
