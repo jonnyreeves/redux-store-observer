@@ -1,0 +1,35 @@
+{
+  "name": "redux-store-observer",
+  "version": "1.0.0",
+  "description": "Respond to Redux Store Stage Changes",
+  "main": "lib/storeObserver.js",
+  "scripts": {
+    "prepublish": "rimraf lib && babel src --out-dir lib",
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint .",
+    "mocha": "mocha --compilers js:babel/register --require ./test/init.js --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonnyreeves/redux-store-observer.git"
+  },
+  "homepage": "https://github.com/jonnyreeves/redux-store-observer",
+  "keywords": [
+    "redux",
+    "redux-middleware",
+    "store",
+    "observer"
+  ],
+  "author": "Jonny Reeves <github@jonnyreeves.co.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "chai": "^3.4.0",
+    "chai-spies": "^0.7.1",
+    "eslint": "^1.7.2",
+    "mocha": "^2.3.3",
+    "redux": "^3.0.3",
+    "rimraf": "^2.4.3"
+  }
+}
